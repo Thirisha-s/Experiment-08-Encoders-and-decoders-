@@ -60,37 +60,53 @@ D7 = X Y Z
 
 
 ### PROGRAM 
-/*
+```
 Program for Endocers and Decoders  and verify its truth table in quartus using Verilog programming.
-Developed by: 
-RegisterNumber:  
-*/
+Developed by: s.thirisha
+RegisterNumber:  212222230160
+## ENCODERS
+module enc(d0,d1,d2,d3,d4,d5,d6,d7,a,b,c);
+input d0,d1,d2,d3,d4,d5,d6,d7;
+output a,b,c;
+or(a,d4,d5,d6,d7);
+or(b,d2,d3,d6,d7);
+or(c,d1,d3,d5,d7);
+endmodule
 
+## DECODERS
+module enc(a,b,c,d0,d1,d2,d3,d4,d5,d6,d7);
+input a,b,c;
+output d0,d1,d2,d3,d4,d5,d6,d7;
+assign d0 = (~a&~b&~c);
+assign d1 = (~a&~b&c);
+assign d2 = (~a&b&~c);
+assign d3 = (~a&b&c);
+assign d4 = (a&~b&~c);
+assign d5 = (a&~b&c);
+assign d6 = (a&b&~c);
+assign d7 = (a&b&c);
+endmodule 
+```
+### RTL LOGIC
+## ENCODERS:
+![image](https://github.com/Thirisha-s/Experiment-08-Encoders-and-decoders-/assets/120380280/4117cd89-48d9-44fd-9359-6ff5b02532d5)
 
+## TIMING DIGRAMS :
+![image](https://github.com/Thirisha-s/Experiment-08-Encoders-and-decoders-/assets/120380280/63c7d38a-564d-4d1e-adbc-16c189a01b33)
 
+## TRUTH TABLE:
+![image](https://github.com/Thirisha-s/Experiment-08-Encoders-and-decoders-/assets/120380280/930664ea-ed92-41cb-9fd8-b280db510b20)
 
+## RTL LOGIC
+## DECODERS:
+![image](https://github.com/Thirisha-s/Experiment-08-Encoders-and-decoders-/assets/120380280/e8c54bf1-91b0-4f49-affb-945bc973ef7b)
 
+## TIMING DIGRAMS :
+![image](https://github.com/Thirisha-s/Experiment-08-Encoders-and-decoders-/assets/120380280/152966c8-9d4d-45e4-aeda-7c1ef4ddfca8)
 
-### RTL LOGIC  
+## TRUTH TABLE:
+![image](https://github.com/Thirisha-s/Experiment-08-Encoders-and-decoders-/assets/120380280/1bfc2e3b-5e2d-4c1c-836b-b43bcf3e4aad)
 
+### RESULTS:
+Thus the program to desing encoder and decoder is done.
 
-
-
-
-
-
-
-### TIMING DIGRAMS  
-
-
-
-
-
-### TRUTH TABLE 
-
-
-
-
-
-
-### RESULTS 
