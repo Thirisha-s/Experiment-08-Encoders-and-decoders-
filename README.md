@@ -53,6 +53,18 @@ D7 = X Y Z
 
 ![image](https://user-images.githubusercontent.com/36288975/171543866-5a6eace6-8683-49d7-9c4f-a7cb30ec3035.png)
 ## Figure -04 8 to 3 Decoder implementation 
+## Procedure
+## STEP 1:
+create module encoder and decoder.
+
+## STEP 2:
+Get inputs and outputs for encoders and decoders.
+
+## STEP 3:
+perform or operation for encoder and and logic for decoders.
+
+# STEP 4:
+perform RTL LOGIC and get waveform.
 
 ### PROGRAM 
 ```
