@@ -54,11 +54,6 @@ D7 = X Y Z
 ![image](https://user-images.githubusercontent.com/36288975/171543866-5a6eace6-8683-49d7-9c4f-a7cb30ec3035.png)
 ## Figure -04 8 to 3 Decoder implementation 
 
-### Procedure
-/* write all the steps invloved */
-
-
-
 ### PROGRAM 
 ```
 Program for Endocers and Decoders  and verify its truth table in quartus using Verilog programming.
